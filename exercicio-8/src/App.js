@@ -9,27 +9,27 @@ export const bgColorContext =  createContext()
 function App() {
 
   const [colorBG, setColorBG] = useState('#282c34')
-  
+
   return (
-    <bgColorContext.Provider value={{ setColorBG}}>
-      <div className="App">
+    <div className="App">
+      <bgColorContext.Provider value={{ setColorBG}}>
         <ColorButton />
-        <header className="App-header" style={{backgroundColor: colorBG}}>
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            Learn React
-          </a>
-        </header>
-      </div>
-    </bgColorContext.Provider>
+      </bgColorContext.Provider>
+      <header className="App-header" style={{backgroundColor: colorBG}}>
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
