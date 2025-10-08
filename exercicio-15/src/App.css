@@ -1,0 +1,14 @@
+
+.App {
+  text-align: center;
+  padding: 40px;
+  background-color: #f4f7f6;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
