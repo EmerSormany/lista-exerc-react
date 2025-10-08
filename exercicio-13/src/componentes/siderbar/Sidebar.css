@@ -1,0 +1,15 @@
+.sidebar-container{
+    background-color: #4ae2c6;
+    width: 10vw;
+    padding: 10px;
+}
+
+.sidebar-container > h4{
+    margin-block-start: 1.0em;
+    margin-block-end: 1.0em;
+}
+
+.sidebar-container > p{
+    margin-block-start: 1.0em;
+    margin-block-end: 1.0em;
+}
